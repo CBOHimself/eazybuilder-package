@@ -1,10 +1,4 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.editorStyles = void 0;
-var editorStyles = exports.editorStyles = {
+export const editorStyles = {
   canvas: {
     minHeight: '80vh',
     padding: '20px',
@@ -22,4 +16,4 @@ var editorStyles = exports.editorStyles = {
     border: '2px solid #1890ff',
     borderRadius: '2px'
   }
-};
+}; 

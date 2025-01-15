@@ -1,44 +1,43 @@
-"use strict";
+import PropTypes from 'prop-types';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.componentPropTypes = void 0;
-var _propTypes = _interopRequireDefault(require("prop-types"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
-var componentPropTypes = exports.componentPropTypes = {
+export const componentPropTypes = {
   base: {
-    style: _propTypes["default"].object,
-    className: _propTypes["default"].string
+    style: PropTypes.object,
+    className: PropTypes.string,
   },
+  
   button: {
-    size: _propTypes["default"].oneOf(['small', 'middle', 'large']),
-    variant: _propTypes["default"].string,
-    color: _propTypes["default"].string,
-    children: _propTypes["default"].node,
-    onClick: _propTypes["default"].func
+    size: PropTypes.oneOf(['small', 'middle', 'large']),
+    variant: PropTypes.string,
+    color: PropTypes.string,
+    children: PropTypes.node,
+    onClick: PropTypes.func,
   },
+  
   container: {
-    background: _propTypes["default"].string,
-    padding: _propTypes["default"].number,
-    children: _propTypes["default"].node
+    background: PropTypes.string,
+    padding: PropTypes.number,
+    children: PropTypes.node,
   },
+  
   card: {
-    title: _propTypes["default"].string,
-    subtitle: _propTypes["default"].string,
-    background: _propTypes["default"].string,
-    padding: _propTypes["default"].number,
-    actions: _propTypes["default"].arrayOf(_propTypes["default"].object),
-    children: _propTypes["default"].node
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    background: PropTypes.string,
+    padding: PropTypes.number,
+    actions: PropTypes.arrayOf(PropTypes.object),
+    children: PropTypes.node,
   },
+  
   image: {
-    src: _propTypes["default"].string,
-    alt: _propTypes["default"].string,
-    onImageChange: _propTypes["default"].func,
-    showUploader: _propTypes["default"].bool
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    onImageChange: PropTypes.func,
+    showUploader: PropTypes.bool,
   },
+  
   text: {
-    initialText: _propTypes["default"].string,
-    fontSize: _propTypes["default"].number
+    initialText: PropTypes.string,
+    fontSize: PropTypes.number,
   }
-};
+}; 
